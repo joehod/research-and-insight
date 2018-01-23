@@ -279,7 +279,7 @@ button:focus {
       float: left; }
       @media (min-width: 769px) {
         #global-header .header-wrapper .header-global .header-logo {
-          width: 33.33%; } }
+          width: 66.66%; } }
       @media screen and (max-width: 379px) {
         #global-header .header-wrapper .header-global .header-logo {
           width: auto;
@@ -291,7 +291,7 @@ button:focus {
   @media (min-width: 769px) {
     #global-header.with-proposition .header-wrapper .header-global {
       float: left;
-      width: 33.33%; }
+      width: 66.66%; }
       #global-header.with-proposition .header-wrapper .header-global .header-logo,
       #global-header.with-proposition .header-wrapper .header-global .site-search {
         width: 100%; } }
@@ -311,7 +311,6 @@ button:focus {
     text-decoration: none;
     text-rendering: optimizeLegibility;
     border-bottom: 1px solid transparent;
-    background: url(images/gov.uk_logotype_crown.png?0.22.3) no-repeat;
     background-size: 36px 32px;
     background-position: 0 0; }
     #global-header #logo img {

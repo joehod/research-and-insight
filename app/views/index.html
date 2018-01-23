@@ -1,64 +1,79 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  GOV.UK prototype kit
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block page_title %} Visit the UK - Research and insight {% endblock %} {% block proposition_header %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block header_class %}
+<!-- blank to remove the proposition header -->
+{% endblock %} {% block content %}
 
 <main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %} {% include "includes/breadcrumbs.html" %}
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
-
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="heading-medium">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-			<h2 class="heading-medium">Examples and documentation</h2>
-
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
-
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
+        Visit the UK
+      </h1>
 
     </div>
   </div>
+
+  <!-- Start of main console -->
+  <div class="grid-row console">
+
+    <div class="column-quarter">
+
+      <ul class="contents">
+        <li class="active">
+          <a href="index.html">Overview</a>
+        </li>
+        <li>
+          <a href="/console-left/find-out">1. Find out</a>
+        </li>
+        <li>
+          <a href="/console-left/choose">2. Choose</a>
+        </li>
+        <li>
+          <a href="/console-left/apply">3. Apply</a>
+        </li>
+        <li>
+          <a href="/console-left/decide">4. Decide</a>
+        </li>
+        <li>
+          <a href="/console-left/fulfil">5. Fulfil</a>
+        </li>
+        <li>
+          <a href="/console-left/comply">6. Comply</a>
+        </li>
+        <li>
+          <a href="/console-left/enforce">7. Enforce</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="column-three-quarter left-border">
+
+      <h2 class="heading-large">Overview</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
+        diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus
+        sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+
+      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula
+        in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+        Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
+        vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+
+      <p>Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non
+        tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
+        potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. </p>
+
+    </div>
+
+  </div>
+
+
+
 </main>
 
 {% endblock %}
-
-
