@@ -7,6 +7,8 @@
 <main id="content" role="main">
   {% include "includes/phase_banner_alpha.html" %} {% include "includes/breadcrumbs.html" %}
 
+<!--This where I enable javascript?-->
+<body class="js-enabled">
   <div class="grid-row">
     <div class="column-two-thirds">
 
@@ -54,6 +56,211 @@
     <div class="column-three-quarter left-border">
 
       <h2 class="heading-large">Apply</h2>
+
+      <style> .tabs > ol, .tabs > ul {
+  @extend %contain-floats;
+  list-style: none;
+  margin: 0 -16px;
+  padding: 0;
+  border-top: 1px solid $border-colour;
+
+  @include media(tablet) {
+    margin: 0;
+    border-top: 0;
+    border-bottom: 2px solid $border-colour;
+  }
+}
+
+.tabs > ul li, .tabs > ol li {
+  margin: 0;
+
+  @include media(tablet) {
+    float: left;
+    margin: 0 3px 0 0;
+  }
+}
+
+.tabs > ul li a, .tabs > ol li a {
+  display: block;
+  line-height: 3.5em;
+  padding: 0 16px;
+  text-align: left;
+  border-bottom: 1px solid $border-colour;
+
+  &:hover {
+    background-color: $highlight-colour;
+  }
+
+  @include media(tablet) {
+    border: solid 2px $white;
+    border-bottom: none;
+    float: left;
+    height: 2.25em;
+    line-height: 2.25em;
+    margin-bottom: -2px;
+    padding: 0 20px;
+  }
+}
+
+.tabs > ul li.active a, .tabs > ol li.active a {
+  background-color: $white;
+  border-bottom: 1px solid $border-colour;
+  color: $text-colour;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+
+  &:hover {
+    color: inherit;
+  }
+
+  @include media(tablet) {
+    border: solid 2px $border-colour;
+    border-bottom: none;
+    padding-bottom: 2px;
+  }
+}
+</style>
+      <!-- Attempting to set up tabs, think need to add 'tabs' class-->
+      <div class="js-tabs tabs"> <!-- JS will add .tabs class -->
+        <ul class="list list-bullet">
+          <li><a class="tabs__link" href="#timeline">Timeline</a></li>
+          <li><a class="tabs__link" href="#application">Application</a></li>
+          <li><a class="tabs__link" href="#actions">Actions</a></li>
+        </ul>
+
+  <!--Tab 1 -->
+      <div id="timeline" class="tab-content">
+
+      <h3 class="heading-medium">User Needs</h3>
+
+      <div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
+        <div class="subsection-controls js-subsection-controls"></div>
+        <div class="subsection-wrapper">
+          <div class="js-subsection subsection">
+            <div class="subsection__header">
+              <h2 class="subsection__title" id="understanding-agile-project-management">
+                <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0"</button>
+              </h2>
+              <p class="subsection__description">I need to know everything I am being asked for is important</p>
+              <span class="subsection__icon"></span>
+            </div>
+            <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
+              <ul class="subsection__list">
+                <li class="subsection__list-item">Backup evidence 1</li>
+                <li class="subsection__list-item">Backup evidence 2</li>
+                <li class="subsection__list-item">Backup evidence 4</li>
+                <li class="subsection__list-item">Backup evidence 5</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subsection js-subsection">
+            <div class="subsection__header">
+              <h2 class="subsection__title" id="working-with-agile-methods">
+                <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1"</button>
+              </h2>
+              <p class="subsection__description">I need to know exactly what information to provide</p>
+              <span class="subsection__icon"></span>
+            </div>
+            <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
+              <ul class="subsection__list">
+                <li class="subsection__list-item">Backup evidence 1</li>
+                <li class="subsection__list-item">Backup evidence 2</li>
+                <li class="subsection__list-item">Backup evidence 4</li>
+                <li class="subsection__list-item">Backup evidence 5</li>
+              </ul>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="working-with-agile-methods">
+                  <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1"</button>
+                </h2>
+                <p class="subsection__description">I need to know how much money each traveller should be described as having</p>
+                <span class="subsection__icon"></span>
+              </div>
+              <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
+                <ul class="subsection__list">
+                  <li class="subsection__list-item">Backup evidence 1</li>
+                  <li class="subsection__list-item">Backup evidence 2</li>
+                  <li class="subsection__list-item">Backup evidence 4</li>
+                  <li class="subsection__list-item">Backup evidence 5</li>
+                </ul>
+              </div>
+            </div>
+            <div class="subsection js-subsection">
+              <div class="subsection__header">
+                <h2 class="subsection__title" id="working-with-agile-methods">
+                  <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1"</button>
+                </h2>
+                <p class="subsection__description">I need to know which information is most important to get correct</p>
+                <span class="subsection__icon"></span>
+              </div>
+              <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
+                <ul class="subsection__list">
+                  <li class="subsection__list-item">Backup evidence 1</li>
+                  <li class="subsection__list-item">Backup evidence 2</li>
+                  <li class="subsection__list-item">Backup evidence 4</li>
+                  <li class="subsection__list-item">Backup evidence 5</li>
+                </ul>
+              </div>
+              <div class="subsection js-subsection">
+                <div class="subsection__header">
+                  <h2 class="subsection__title" id="working-with-agile-methods">
+                    <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1"</button>
+                  </h2>
+                  <p class="subsection__description">I need to recieve feedback that the information I entered is in the right format</p>
+                  <span class="subsection__icon"></span>
+                </div>
+                <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
+                  <ul class="subsection__list">
+                  </p>
+
+                  <p>
+                    <span style="font-weight:700">So that</span> I do not worry that I made an avoidable error in my application
+                  </p>
+                  <h3 class="heading-medium">Evidence:</h3>
+                  <p>
+                    <strong class="phase-tag ur">User research</strong>
+                  </p>
+
+
+                  <h4 class="heading-small">UKVI services on GOV.UK</h4>
+                  <p>
+                    <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                    <br>
+                    <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                    <br>
+                    <span style="font-weight:700;">Date:</span> October 2017
+                  </p>
+
+                  <p>
+                    <span style="font-weight:700;">Users gave a strong sense that they were not always clear exactly what was needed when a question was asked during the application:</span>
+                  </p>
+
+                  <p> “what information you exactly need to put in" [P10]</p>
+
+                  <p> "So I think the only thing I’d like to think about is have a help sheet like that, like a, guidance sheet so you know when the person is filling, okay for this. What is the answer? How do you fill this? This is how you fill this.” [P7] </p>
+
+                  <p> “I would still say a filled example form on the website” [P9] </p>
+
+                  <p> “But the second time it’s easy, it was just not very difficult because I have example on it” [P2] </p>
+
+                  <p> “To be more precise, they asked me for the CAS number, C-A-S. I never met before that kind of requirement. It is a number, practically, that the university must give, that number. It is some kind of number that proves that you are unconditionally accepted on your study course, but, unfortunately, they did not provide me with that CAS number. That CAS number is, practically, for the Tier 4 Visa, and not for short-term student visitor visa, but I realised that later. In the first moment, when I applied for the visa, when I started to fill out these online forms, “Do you have CAS number?” “Uh-oh!” I asked my friend what to do now. He said, “Tell him the truth. Do you have it? No, you don’t. Tell him the truth,” and I said, “Yes.</p>
+
+                  <input class="button" type="submit" value="Transcripts">
+
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <h3 class="heading-medium">Research Insights</h3>
+
       <div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
         <div class="subsection-controls js-subsection-controls"></div>
         <div class="subsection-wrapper">
@@ -178,22 +385,6 @@
                 <img src="/public/images/pic.png" style="width:641px;">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
           </div>
           <div class="subsection js-subsection">
@@ -217,11 +408,16 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="application" class="tab-content">
+
+    <p> Hello </>
 
   </div>
 
 
 
+</body>
 </main>
 
 {% endblock %}
