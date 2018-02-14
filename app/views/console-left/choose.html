@@ -4,6 +4,7 @@
 <!-- blank to remove the proposition header -->
 {% endblock %} {% block content %}
 
+
 <main id="content" role="main">
   {% include "includes/phase_banner_alpha.html" %} {% include "includes/breadcrumbs.html" %}
 
@@ -55,6 +56,14 @@
 
       <h2 class="heading-large">Choose</h2>
 
+      <!--Tab headings-->
+      <tab-check-what-my-visa-options-are>Check what my visa options are</tab-check-what-my-visa-options-are>
+      <tab-find-the-most-suitable-option-for-my-situation>Find the most suitable option for my situation</tab-find-the-most-suitable-option-for-my-situation>
+      <tab-prepare-for-application>Prepare for application</tab-prepare-for-application>
+
+      <tab-check-what-my-visa-options-are-content>
+        <h2> Check what my visa options are </h2>
+
       <div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
         <div class="subsection-controls js-subsection-controls"></div>
         <div class="subsection-wrapper">
@@ -63,17 +72,193 @@
               <h2 class="subsection__title" id="understanding-agile-project-management">
                 <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0">Insight 1:</button>
               </h2>
-              <p class="subsection__description">Choosing a visa is easier when there is a close match between activity and type of visa. Some users review
-                all visas options and refine by process of elimination.</p>
+              <!--Insight goes here-->
+              <p class="subsection__description">Some users read all the visas options and choose theirs by process of elimiation. It was not immediately obvious which visa was right for their specific trip</p>
               <span class="subsection__icon"></span>
             </div>
             <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
-              <ul class="subsection__list">
-                <li class="subsection__list-item">Backup evidence 1</li>
-                <li class="subsection__list-item">Backup evidence 2</li>
-                <li class="subsection__list-item">Backup evidence 4</li>
-                <li class="subsection__list-item">Backup evidence 5</li>
+              <h3 class="heading-medium">Evidence:</h3>
+              <!--Methodology and details of user research-->
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI services on GOV.UK</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                <br>
+                <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                <br>
+                <span style="font-weight:700;">Date:</span> October 2017
+              </p>
+              <!--Enter evidence here-->
+              <ul class="list list-bullet">
+                <li>"It was not so quickly to know which visa I needed… finally I got standard visa"]; "I looked at all the other visas and I did not fall into any of the categories … in the end I followed by instincts and went for the tourist visa" [R6-P12]</li>
               </ul>
+              <p>This lead to an inefficient, time-consuming process and reduced confidence in having made the right choice. There was a sense of users looking for the application that matched their circumstance and knowing it when they saw it.</p>
+              <ul class="list list-bullet">
+                <li>"There were many options but this was the only option that was relevant to me" [R6-P10</li>
+                <li>"Once I saw the relevant application form it was more straightforward" [R6-P5].</li>
+              </ul>
+
+
+
+              <!--Link for sharepoint if transcripts or recordings-->
+              <p>
+                <a href="https://homeofficegovuk.sharepoint.com/:f:/s/DigitalServices/UKVIServices/EkKE9xrXJFlMgOuuL-SeOsEBGVVMiliydFWVsz8HOjIFLQ?e=2sNpnG"class="link">Transcripts</a>
+              </p>
+
+                <!--Context-->
+              <h3 class="heading-medium">Operational and Policy context:</h3>
+
+              <!--Impact-->
+              <h3 class="heading-medium">Impact:</h3>
+              <!--On individuals-->
+              <h4 class="heading-small">On individual users</h4>
+              <!--On performance measures-->
+              <h4 class="heading-small">On performance measures</h4>
+              <!--Recommendations-->
+              <h3 class="heading-medium">Recommendations:</h3>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </tab-check-what-my-visa-options-are-content>
+
+      <tab-find-the-most-suitable-option-for-my-situation>
+
+        <h2> Find the most suitable option for my situation</h2>
+
+      <div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
+        <div class="subsection-controls js-subsection-controls"></div>
+        <div class="subsection-wrapper">
+          <div class="js-subsection subsection">
+            <div class="subsection__header">
+              <h2 class="subsection__title" id="understanding-agile-project-management">
+                <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0">Insight 1:</button>
+              </h2>
+              <p class="subsection__description" style="color:purple">Choosing a visa is easier when there is a close match between activity and type of visa as users feel reassured what they want to do is permitted. Well named visas help with this.</p>
+              <span class="subsection__icon"></span>
+            </div>
+            <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
+              <h3 class="heading-medium">Evidence:</h3>
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI services on GOV.UK</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                <br>
+                <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                <br>
+                <span style="font-weight:700;">Date:</span> October 2017
+              </p>
+
+              <p>Some users had read all the visas and chosen theirs by a process of elimination:</p>
+
+              <ul class="list list-bullet">
+                <li>"It was not so quickly to know which visa I needed… finally I got standard visa”]; “I looked at all the other visas and I did not fall into any of the categories … in the end I followed by instincts and went for the tourist visa” [R6 - P12]</li>
+              </ul>
+              <p>This lead to an inefficient, time-consuming process and reduced confidence in having made the right choice. There was a sense of users looking for the application that matched their circumstance and knowing it when they saw it.</p>
+              <ul class="list list-bullet">
+              <li>"There were many options but this was the only option that was relevant to me” [R6 - P10]</li>
+              <li>“Once I saw the relevant application form it was more straightforward” [R6 - P5]. </li>
+              </ul>
+              <p>Choosing a visa is easier when there is a close match between activity and type of visa. Someone coming to do a training course with their company got confused as to whether this was came under a business visit or a student visit:</p>
+              <ul class="list list-bullet">
+                <li>“I was a little bit confused between a business visa and the visa given for student doing a short-term course”. </li>
+              </ul>
+              <p>Another was not clear whether their business trip constituted work and they needed to go to the full effort of a work visa:</p>
+              <ul class="list list-bullet">
+                <li>“there is another visa I think takes more time and effort to get…I needed something simpler because I was not going to work”</li>
+              </ul>
+              <p>Conversely, it is easier when close match between activity and type of visa. Well named visas help with this: </p>
+              <ul class="list list-bullet">
+                <li>“The names of the choices, when you try they look a bit more convenient”</li>
+              </ul>
+              <p>Users had clear ideas about whether they were or were not a tourist and this influenced their decisions:</p>
+              <ul class="list list-bullet">
+                <li>“I’m not a tourist, I’m going to visit my girlfriend”</li>
+                <li>“here was lots of options Like standard visa or this visiting as an academic stuff. So, I was confused. Which one am I applying for, because I’m going for an excursion” [R6 - P9]</li>
+              </ul>
+              <p>
+                <a href="https://homeofficegovuk.sharepoint.com/:f:/s/DigitalServices/UKVIServices/EkKE9xrXJFlMgOuuL-SeOsEBGVVMiliydFWVsz8HOjIFLQ?e=of0ctz"class="link">Transcripts</a>
+              </p>
+
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI Benchmarking</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd
+                <br>
+                <span style="font-weight:700;">Methodology:</span> 30 timed navigation tests using Indian nationals
+                <br>
+                <span style="font-weight:700;">Date:</span> February 2018
+              </p>
+
+              <h2 style="color:red"> To Add</hr>
+
+                <p style="margin-top:45px;">
+                    <strong class="phase-tag ci">Customer insight</strong>
+                </p>
+              </p>
+              <h4 class="heading-small">Customer Insight Survey</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> ---
+                <br>
+                <span style="font-weight:700;">Methodology:</span> Customer Satisfaction Survey completed by 39 users in 2017
+                <br>
+                <span style="font-weight:700;">Date:</span> January 2017 - December 2017
+              </p>
+                <img src="/public/images/CI-identifyapplication.png" style="width:641px;">
+
+              <h3 class="heading-medium">Operational and Policy context:</h3>
+              <p> Up until 2008 there were a larger number of visit visas avaialable. This included:</p>
+              <ul class="list list-bullet">
+                <li>Family Visitor visa</li>
+                <li>General Visitor visa</li>
+                <li>Child Visitor visa</li>
+                <li>Business Visitor visa, including visas for academics, doctors and dentists</li>
+                <li>Sports Visitor visa</li>
+                <li>Entertainer Visitor visa</li>
+                <li>Prospective Entrepreneur visa</li>
+                <li>Private Medical Treatment Visitor visa</li>
+                <li>Approved Destination Status (ADS) visa</li>
+              </ul>
+              <p> These were all brought under the Standard Visitor Visa that is avaialable today. This was to simplify the guidance to a single source rather than providing individual guidance for each of indidivudal visit visas avaialble</p>
+
+              <h3 class="heading-medium">Impact:</h3>
+              <h4 class="heading-small">On individual users</h4>
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI services on GOV.UK</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                <br>
+                <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                <br>
+                <span style="font-weight:700;">Date:</span> October 2017
+              </p>
+              <p>Confusion:</p>
+              <ul class="list list-bullet">
+                <li>"So, I was confused. Which one am I applying for, because I’m going for an excursion” [R6-P9]</li>
+              </ul>
+              <p>Anxiety:</p>
+              <ul class="list list-bullet">
+                <li>"I was afraid that if I selected the wrong type, it could cause more delay in our visa application" [R6-P3]</li>
+                <li>"There’s a side of me that kept on saying, What if I didn’t get the right visa?"" [R6-10]</li>
+              </ul>
+
+              <h4 class="heading-small">On performance measures</h4>
+              <p>It may be the case that a number of calls to contact centres are the result of potential visit visa applicants wanting reassurance that they have selected the correct visa for what they want to do.</p>
+
+              <h3 class="heading-medium">Recommendations:</h3>
+              <p>1) Commission research to explore potential benefit of alternative naming practices for visit visas</p>
+              <p>2) Collect the reason for calls to teh contact centre to identify the prevalence of users calling because they cannot confidently identify the correct visa for what they want to do </p>
+
             </div>
           </div>
           <div class="subsection js-subsection">
@@ -81,16 +266,29 @@
               <h2 class="subsection__title" id="working-with-agile-methods">
                 <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1">Insight 2:</button>
               </h2>
-              <p class="subsection__description">Users stated that other governments were easier to contact about visa related enquiries.</p>
+              <p class="subsection__description">It was harder to choose a visa when there was more than one option that the users felt could be applicable to them</p>
               <span class="subsection__icon"></span>
             </div>
             <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
-              <ul class="subsection__list">
-                <li class="subsection__list-item">Backup evidence 1</li>
-                <li class="subsection__list-item">Backup evidence 2</li>
-                <li class="subsection__list-item">Backup evidence 4</li>
-                <li class="subsection__list-item">Backup evidence 5</li>
+              <h3 class="heading-medium">Evidence:</h3>
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI services on GOV.UK</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                <br>
+                <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                <br>
+                <span style="font-weight:700;">Date:</span> October 2017
+              </p>
+              <ul class="list list-bullet">
+                <li>"we had two types of visa to go for… actually we had two options we wanted to do"</li>
               </ul>
+              <p>
+                <a href="https://homeofficegovuk.sharepoint.com/:f:/s/DigitalServices/UKVIServices/EnPwZERZ1h1IgRUiPHSOYo8BnorWN-pfDDe8QhzPvBTEig?e=7FI0Wl"class="link">Transcripts</a>
+              </p>
+
             </div>
           </div>
           <div class="subsection js-subsection">
@@ -98,19 +296,156 @@
               <h2 class="subsection__title" id="governing-agile-services">
                 <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_2">Insight 3:</button>
               </h2>
-              <p class="subsection__description">Users had clear ideas about whether they were or were not a tourist.</p>
+              <p class="subsection__description">Some users need help from a third party to direct them to towards the correct visa for their trip.</p>
               <span class="subsection__icon"></span>
             </div>
             <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_2">
-              <ul class="subsection__list">
-                <li class="subsection__list-item">Backup evidence 1</li>
-                <li class="subsection__list-item">Backup evidence 2</li>
-                <li class="subsection__list-item">Backup evidence 4</li>
-                <li class="subsection__list-item">Backup evidence 5</li>
+              <h3 class="heading-medium">Evidence:</h3>
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI services on GOV.UK</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                <br>
+                <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                <br>
+                <span style="font-weight:700;">Date:</span> October 2017
+              </p>
+              <ul class="list list-bullet">
+                <li>"my company's contractor, the African [inaudible - 0:04:51] told us, this is the thing that we… this is what we apply for, this is the category which we will apply for, so we fill in for the category" (R6 P1)</li>
+                <li>"The company was my, let's just say, sponsor. They sent me the invitation letter. So, I applied for the business trip and business visa" (R6 P4)</li>
+                <li>"Researcher: Yeah. And if we go back to the decision tree and then look on Gov.UK. So was the decision tree something provided by the school?
+
+                  User: Both. First time I was obviously on the school website, as this is my first time going to the UK, and the school made it very clear…"" (R6 - P8)</li>
+                <li>"Well, I asked my friends who applied the previous year and who got the visa and who also went with an excursion. So, I had to contact this one to decide on the right one" (R6 - P9)</li>
+                <li>"Yes. Because I asked the questions and just they said … student visa. (R6 P5)"</li>
               </ul>
+              <p>
+                <a href="https://homeofficegovuk.sharepoint.com/:f:/s/DigitalServices/UKVIServices/EnPwZERZ1h1IgRUiPHSOYo8BnorWN-pfDDe8QhzPvBTEig?e=7FI0Wl"class="link">Transcripts</a>
+              </p>
             </div>
           </div>
         </div>
+      </div>
+
+      <tab-prepare-for-application>
+        <p>Prepare for application</p>
+
+      </tab-prepare-for-application>
+      <div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
+        <div class="subsection-controls js-subsection-controls"></div>
+        <div class="subsection-wrapper">
+          <div class="js-subsection subsection">
+            <div class="subsection__header">
+              <h2 class="subsection__title" id="understanding-agile-project-management">
+                <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0">Insight 1:</button>
+              </h2>
+              <!--Insight goes here-->
+              <p class="subsection__description">Many users stated that they had questions and concerns that they would like answered but found it difficult to get in contact with what they thought would be the relevant organisation</p>
+              <span class="subsection__icon"></span>
+            </div>
+            <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
+              <h3 class="heading-medium">Evidence:</h3>
+              <!--Methodology and details of user research-->
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI services on GOV.UK</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                <br>
+                <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                <br>
+                <span style="font-weight:700;">Date:</span> October 2017
+              </p>
+              <!--Enter evidence here-->
+              <p>Some tried to contact the VAC centres or UKVI by phone to get advice</p>
+              <ul class="list list-bullet">
+                <li>"I remember struggling to be able to get any, if I had any questions or any concerns, not being able to have anyone to get through to" (R6 - P10)</li>
+                <li>"We try our best to contact Visa UK for some help, but it was impossible, when I visited the website" (R9 - P3)</li>
+                <li>"UK visa application centre in my country in my city. They helped advise me to put as much as possible. But for that I needed to come there personally. They didn't have any mobile phone or email address. That was another point which was very painful for me during the application" (R6-12)</li>
+                <li>"I think if there was a possibility of having a telephone helpline that is central that works, that would be really good" (R6 - P10)</li>
+                <li>"Open only from this time to this time and then there's a time difference to make the call" (R6 - P7)</li>
+              </ul>
+
+
+              <!--Link for sharepoint if transcripts or recordings-->
+              <p>
+                <a href="https://homeofficegovuk.sharepoint.com/:f:/s/DigitalServices/UKVIServices/EnPwZERZ1h1IgRUiPHSOYo8BnorWN-pfDDe8QhzPvBTEig?e=7FI0Wl"class="link">Transcripts</a>
+              </p>
+                <!--Context-->
+              <h3 class="heading-medium">Operational and Policy context:</h3>
+
+              <!--Impact-->
+              <h3 class="heading-medium">Impact:</h3>
+              <!--On individuals-->
+              <h4 class="heading-small">On individual users</h4>
+              <!--On performance measures-->
+              <h4 class="heading-small">On performance measures</h4>
+              <!--Recommendations-->
+              <h3 class="heading-medium">Recommendations:</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="subsection-wrapper">
+          <div class="js-subsection subsection">
+            <div class="subsection__header">
+              <h2 class="subsection__title" id="understanding-agile-project-management">
+                <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0">Insight 1:</button>
+              </h2>
+              <!--Insight goes here-->
+              <p class="subsection__description">Users who managed to get in contact with UKVI by phone felt the call charges were excessive.</p>
+              <span class="subsection__icon"></span>
+            </div>
+            <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
+              <h3 class="heading-medium">Evidence:</h3>
+              <!--Methodology and details of user research-->
+              <p>
+                <strong class="phase-tag ur">User research</strong>
+              </p>
+              <h4 class="heading-small">UKVI services on GOV.UK</h4>
+              <p>
+                <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+                <br>
+                <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+                <br>
+                <span style="font-weight:700;">Date:</span> October 2017
+              </p>
+              <!--Enter evidence here-->
+              <ul class="list list-bullet">
+                <li>"when we had doubts about a question or two we tried to call the support centre, the UK support centre or something like that, but it costs about £5 or something like that for questions to be answered. I don't think that is very…that's not the nicest thing" (R6 - P7)</li>
+                <li>"also it's already an international call, and then spending £6 or £10 for a minute I don't think that's very fair… They either deducted £5 or something, but it's very expensive to do that. I think it should have a free help centre or something like that" (R6 - P7)</li>
+              </ul>
+              <p>While others were had been unable to reach anyone expressed they would be willing to pay extra to speak with someone</p>
+              <ul class="list list-bullet">
+                <li>"But even if there was a bit added to the fee just to be able to cover costs of people being able to make a phone call, or to be able to check on progress" (R6-P10)</li>
+               </ul>
+
+
+              <!--Link for sharepoint if transcripts or recordings-->
+              <p>
+                <a href="https://homeofficegovuk.sharepoint.com/:f:/s/DigitalServices/UKVIServices/EnPwZERZ1h1IgRUiPHSOYo8BnorWN-pfDDe8QhzPvBTEig?e=7FI0Wl"class="link">Transcripts</a>
+              </p>
+                <!--Context-->
+              <h3 class="heading-medium">Operational and Policy context:</h3>
+
+              <!--Impact-->
+              <h3 class="heading-medium">Impact:</h3>
+              <!--On individuals-->
+              <h4 class="heading-small">On individual users</h4>
+              <!--On performance measures-->
+              <h4 class="heading-small">On performance measures</h4>
+              <!--Recommendations-->
+              <h3 class="heading-medium">Recommendations:</h3>
+
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
 

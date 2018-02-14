@@ -55,57 +55,298 @@
     </div>
 
     <div class="column-three-quarter">
+      <h2 class="heading-large">Overview</h2>
 
-      <div class="js-tabs"> <!-- JS will add .tabs class -->
-  <ul class="list list-bullet">
-      <li><a class="tabs__link" href="#timeline">Timeline</a></li>
-      <li><a class="tabs__link" href="#application">Application</a></li>
-      <li><a class="tabs__link" href="#actions">Actions</a></li>
-  </ul>
+    <tab-users>Users</tab-users>
+    <tab-research-projects>Research projects</tab-research-projects>
 
-  <!-- Tab 1 -->
-  <div id="timeline" class="tab-content">
-    <h2 class="heading-medium">Timeline</h2>
+
+    <tab-users-content>
+      <h3 class="heading-medium">User demographics</h3>
+      <h4 class="heading-small">Top 5 visitor nationalities, year ending September 2017</h4>
+      <table>
+  <thead>
+    <tr>
+      <th scope="col">Country</th>
+      <th class="numeric" scope="col">Number of visitors</th>
+      <th class="numeric" scope="col">% of total</th>
+      <th class="numeric" scope="col">Change over last 12 months (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">China</th>
+      <td class="numeric">543,000</td>
+      <td class="numeric">26%</td>
+      <td class="numeric">92,034(20)
+        <span class="hod-arrow-up"></span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">India</th>
+      <td class="numeric">428,000</td>
+      <td class="numeric">21%</td>
+      <td class="numeric">42,123 (11)
+        <span class="hod-arrow-up"></span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Russia</th>
+      <td class="numeric">125,000</td>
+      <td class="numeric">6%</td>
+      <td class="numeric">24,036 (25)*
+      <span class="hod-arrow-up"></span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Saudi Arabia</th>
+      <td class="numeric">103,000</td>
+      <td class="numeric">5%</td>
+      <td class="numeric">11,343 (11)*
+        <span class="hod-arrow-up"></span>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Turkey</th>
+      <td class="numeric">93,000</td>
+      <td class="numeric">4%</td>
+      <td class="numeric">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Other</th>
+      <td class="numeric">783,000</td>
+      <td class="numeric">38%</td>
+      <td class="numeric">-</td>
+    </tr>
+  </tbody>
+</table>
+    <p>Source: Home Office, Immigration Statistics July to September 2017, Visas table vi 01 q (Visas volume 1) and Visas table vi 06 q o (Visas volume 3).</p>
+    <p>*Source: Home Office, Immigration statistics April to June 2017, Visas table vi 06 q o (Visas volume 3). </p>
+
+    <h4 class="heading-small">Duration of visit visas granted</h4>
     <table>
+      <thead>
+        <tr>
+          <th scope="col">Validity length</th>
+          <th class="numeric" scope="col">Number granted</th>
+          <th class="numeric" scope="col">% of total</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td>Submitted expense claim</td>
-          <td>25 July 2017</td>
+          <th scope="row">6 months</th>
+          <td class="numeric">1,400,00</td>
+          <td class="numeric">68%</td>
         </tr>
         <tr>
-          <td>Application was made for financial support</td>
-          <td>23 May 2017</td>
+          <th scope="row">2, 5 or 10 years</th>
+          <td class="numeric">600,000</td>
+          <td class="numeric">32%</td>
         </tr>
+    </table>
+    <p>Source: Home Office, Immigration Statistics April to June 2017.</p>
+    <h3 class="heading-medium">Digital inclusion</h3>
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds">
+    <h4 class="heading-small">Users</h4>
+    <img src="/public/images/di-scale.png" style="width:100%"/>
+
+    <h4 class="heading-small">Providers</h4>
+    <img src="/public/images/di-scale.png" style="width:100%"/>
+
+  </div>
+
+  <div class="column-one-third">
+    <h4 class="heading-small">Contributing projects</h4>
+  </div>
+
+  </div>
+  <div class="grid-row">
+    <div class="column-full">
+      <h3 class="heading-medium">Personas</h3>
+      <table>
+      <thead>
         <tr>
-          <td>Address details updated</td>
-          <td>5 May 2017</td>
+          <th scope="col">Link</th>
+          <th scope="col">Project</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <td>Applicant was added to the system</td>
-          <td>4 May 2017</td>
+          <th class="link" scope="col">example.file</th>
+          <th>[Project name]</th>
         </tr>
       </tbody>
     </table>
-  </div>
-
-  <!-- Tab 2 -->
-  <div id="application" class="tab-content">
-    <h2 class="heading-medium">Application details</h2>
-    <p>The applicant process was completed and closed on 29 July 2017.</p>
-  </div>
-
-  <!-- Tab 3 -->
-  <div id="actions" class="tab-content">
-    <h2 class="heading-medium">Actions</h2>
-    <p>No actions available</p>
-  </div>
-</div>
-
 
     </div>
+  </div>
 
+</tab-users-content>
+
+<tab-research-projects-content>
+<h3 class="heading-medium">Research projects</h3>
+
+<div class="js-accordion-with-descriptions" data-module="accordion-with-descriptions">
+  <div class="subsection-controls js-subsection-controls"></div>
+  <div class="subsection-wrapper">
+    <div class="js-subsection subsection">
+      <div class="subsection__header">
+        <h2 class="subsection__title" id="understanding-agile-project-management">
+          <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_0">
+            <div class="grid-row">
+              <div class="column-one-third" style="200px">
+                Access UK
+              </div>
+              <div class="column-one-third" style="200px">
+                2016-
+              </div>
+              <div class="column-one-third" style="200px">
+              Act, Decide
+            </div>
+          </button>
+        </h2>
+        <span class="subsection__icon"></span>
+      </div>
+      <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_0">
+        <p> The Visas (Access UK) project aims to digitise all paper based Visa forms and to provide a single online application process for all Visa and immigration services:</p>
+        <ul class="list list-bullet">
+          <li class="subsection__list-item">Accessed via GOV.UK, for all in and out of country applications</li>
+          <li class="subsection__list-item">Replaces all of today's online and paper-based application processes</li>
+          <li class="subsection__list-item">Fewer, more intuitive questions ordered based on customer feedback</li>
+          <li class="subsection__list-item">Used to apply, pay and book an appointment</li>
+          <li class="subsection__list-item">A single online application form for dependants and groups</li>
+         <strong class="bold-small">Researchers:</strong>
+         <p>Bhavik Morar, Andras Dombi</p>
+      </div>
+    </div>
+    <div class="subsection js-subsection">
+      <div class="subsection__header">
+        <h2 class="subsection__title" id="working-with-agile-methods">
+          <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_1">Digital Permissions 2016  Comply:</button>
+        </h2>
+        <span class="subsection__icon"></span>
+      </div>
+      <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_1">
+        <ul class="subsection__list">
+
+          <li class="subsection__list-item">Backup evidence 2</li>
+          <li class="subsection__list-item">Backup evidence 4</li>
+          <li class="subsection__list-item">Backup evidence 5</li>
+        </ul>
+      </div>
+    </div>
+    <div class="subsection js-subsection">
+      <div class="subsection__header">
+        <h2 class="subsection__title" id="governing-agile-services">
+          <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_2">Insight 3:</button>
+        </h2>
+        <p class="subsection__description">It is not clear what documents and evidence users are required to submit during the visit visa application.</p>
+        <span class="subsection__icon"></span>
+      </div>
+      <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_2">
+
+        <h3 class="heading-medium">Impact:</h3>
+        <p>Users will seek guidance from third parties such as friends or travel agents on which documents to prepare
+          and submit.</p>
+
+        <p>Unclear document requirements mean that users tend to include everything the could think of.</p>
+
+        <p>Much of the documentation users submit is of little value and wastes time, effort, money and attention</p>
+
+        <p>There are large costs involved in shipping, storing and processing this documentation.
+        </p>
+        <h3 class="heading-medium">Evidence:</h3>
+        <p>
+          <strong class="phase-tag ur">User research</strong>
+        </p>
+
+
+        <h4 class="heading-small">UKVI services on GOV.UK</h4>
+        <p>
+          <span style="font-weight:700;">Researchers:</span> Clare Ridd and Joe Coker
+          <br>
+          <span style="font-weight:700;">Participants:</span> 12 interviews with visit visa holders
+          <br>
+          <span style="font-weight:700;">Date:</span> October 2017
+        </p>
+
+        <p>Several users described their confusion over which documents to provide:</p>
+
+        <ul class="list list-bullet">
+          <li>"It's not easy for any kind of visa"</li>
+          <li>"now again I hand those in because I don't know exactly what"</li>
+          <li>"what exactly they want you to hand in. Because I might hand in totally irrelevant documents"</li>
+          <li>"So I think it is different and we might need more supporting docs"</li>
+          <li>"Somesupporting documents and I didn't know what those documents should be"</li>
+        </ul>
+
+        <p>Users often had to ask a third party for guidance over what to supply:</p>
+
+        <ul class="list list-bullet">
+          <li>"So, I have to ask a tourism company and they instructed how to prepare the documents"
+            <a href="#">R6 - P3)</a>
+          </li>
+          <li>The first time I applied I asked from friends who had applied before what they did, and of course they said,
+            "For proof of residence you need to hand in… all of them were based on judgemental, and based on what friends
+            had told me, based on also what they had used to hand in
+            <a href="#">(R6 - Arthur)</a>
+          </li>
+        </ul>
+
+
+        <h4 class="heading-small">China field research</h4>
+        <p>
+          <span style="font-weight:700;">Researcher:</span> Katy Arnold
+          <br>
+          <span style="font-weight:700;">Participants:</span> 18 interviews with chinese nationals
+          <br>
+          <span style="font-weight:700;">Date:</span> 2014
+        </p>
+
+        <p>We should work much harder to make it clear that documents are supposed to support the online application.
+          This isn't obvious to our users who don't seem to make a very strong connection between 'the form' and 'documents'.
+          Users feel uncertain about which documents to supply.</p>
+
+        <p>The documents you supply should give evidence for the statements you have made in the application itself -
+          seems to have been lost in the noise. We don't give much advice on which documents to supply within our app,
+          though we do give some structure on the 'cover sheet' (which users print off).</p>
+
+        <p>I couldn't detect any awareness that the one was supposed to inform the other. The documents provide evidence
+          for the application (form), which is obvious to everybody 'in the business' but less obvious to users.
+        </p>
+
+        <p style="margin-top:45px;">
+            <strong class="phase-tag ci">Customer insight</strong>
+          </p>
+
+          <img src="/public/images/pic.png" style="width:641px;">
+
+
+      </div>
+    </div>
+    <div class="subsection js-subsection">
+      <div class="subsection__header">
+        <h2 class="subsection__title" id="governing-agile-services">
+          <button class="subsection__button js-subsection-button" aria-expanded="false" aria-controls="subsection_content_2">Insight 4:</button>
+        </h2>
+        <p class="subsection__description">Users have described instances of confusion and frustration when surprised with unexpected costs during the
+          application process.</p>
+        <span class="subsection__icon"></span>
+      </div>
+      <div class="subsection__content js-subsection-content js-hidden" id="subsection_content_2">
+        <ul class="subsection__list">
+          <li class="subsection__list-item">Backup evidence 1</li>
+          <li class="subsection__list-item">Backup evidence 2</li>
+          <li class="subsection__list-item">Backup evidence 4</li>
+          <li class="subsection__list-item">Backup evidence 5</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
-
 
 
 
